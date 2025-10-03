@@ -1,0 +1,7 @@
+para rodar o php:
+- entre no terminal pelo git bash 
+-escreva (cd 1-questão) troque o numero 1 pelo numero da pasta
+- e rode esse comando abaixo
+php -S localhost:8000
+
+Não esqueça de deletar o terminal e abrir outro para conseguir usar as outras pastas

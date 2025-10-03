@@ -1,0 +1,99 @@
+/* ===== Estilo geral ===== */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff9a9e, #fad0c4); /* Fundo degradê rosa/laranja */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== Caixa central ===== */
+.container {
+    background: #fff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+    text-align: center;
+    width: 350px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* ===== Títulos ===== */
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* ===== Labels e Inputs ===== */
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #444;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    outline: none;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+input[type="number"]:focus {
+    border-color: #ff6f91;
+}
+
+/* ===== Botão ===== */
+input[type="submit"], .btn-voltar {
+    background: #ff6f91;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover,
+.btn-voltar:hover {
+    background: #e05578;
+    transform: scale(1.03);
+}
+
+/* ===== Página de resultado ===== */
+.resultado p {
+    font-size: 18px;
+    margin: 12px 0;
+    font-weight: bold;
+}
+
+/* Situações coloridas */
+.fria {
+    color: #1e90ff; /* azul */
+}
+
+.agradavel {
+    color: #32cd32; /* verde */
+}
+
+.quente {
+    color: #ff4500; /* laranja/vermelho */
+}
+
+/* ===== Animação ===== */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}

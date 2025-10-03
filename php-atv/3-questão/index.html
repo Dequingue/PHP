@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora de Ciclo Menstrual</title>
+    <link rel="stylesheet" href="estilo_ciclo.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Calculadora de Ciclo Menstrual</h2>
+        <form action="processa_ciclo.php" method="post">
+            <label for="ultima_menstruacao">Data da última menstruação:</label>
+            <input type="date" name="ultima_menstruacao" id="ultima_menstruacao" required>
+
+            <label for="duracao_ciclo">Duração média do ciclo (em dias):</label>
+            <input type="number" name="duracao_ciclo" id="duracao_ciclo" min="20" max="45" required>
+
+            <input type="submit" value="Calcular Previsão">
+        </form>
+    </div>
+</body>
+</html>
