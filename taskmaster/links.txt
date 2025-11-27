@@ -1,2 +1,0 @@
-http://localhost:8080/phpmyadmin/
-http://localhost:8080/taskmaster/login.php
